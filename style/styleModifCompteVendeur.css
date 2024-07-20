@@ -1,0 +1,252 @@
+@font-face { font-family: inter; src: url(../font/Inter.ttf);}
+
+body{
+    font-family: inter;
+}
+.block {
+    margin: 2% auto;
+    padding: 1em 4em;
+    box-shadow: 4px 4px 10px black;
+    width: 40%;
+    border-radius: 25px;
+}
+
+.tabs{
+    margin: 2% auto;
+
+    display: flex;;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.gauche{
+    margin-right: 150px;
+}
+
+.block h2{
+    text-align: center;
+}
+
+.bouton{
+    font-size: 20px;
+    background-color: #1F4F51 !important;
+    padding: 5px 30px 25px 30px;
+    border: solid 2px #1F4F51 !important;
+    color: #FDD365;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.bouton:hover{
+    background-color: #FFD365 !important;
+    color: #1F4F51;
+}
+
+.block input{
+    border: solid 2px #D3D3D3;
+    border-radius: 5px;
+    height: 25px;
+    width: 350px;
+    background-color: #e9e9e9;
+    box-shadow: 5px 5px 5px #D3D3D3;
+    margin: 10px 0 10px 0;
+}
+
+input:hover{
+    border-color: black;
+}
+
+.champ{
+    padding: 1em;
+}
+
+.hcontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.containervalide{
+    justify-content: space-between;
+}
+.dateexpr input{
+    width: 30px;
+    margin-left: 1em;
+}
+
+.champvalide{
+    color: green;
+}
+.champerrone{
+    color: red;
+}
+.retour{
+    color: rgb(79, 79, 79);
+}
+.retour:first-letter{
+    font-size: 2em;
+}
+.retour:not(:first-letter){
+    font-size: 100px;
+}
+/* tabs */
+.warpper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+textarea{
+    width: 100%;
+}
+
+.tab {
+    flex-grow: 1;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #1F4F51;
+    display: inline-block;
+    color: #FFD365;
+    border-radius: 25px;
+    margin: 0.5em;
+}
+
+.panel {
+    display: none;
+}
+
+@keyframes fadein {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+}
+
+.panel-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.radio {
+    display: none;
+}
+
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel {
+    display: block;
+}
+
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab {
+    background: #FFD365;
+    color: #000;
+    border: 3px solid #1F4F51;
+}
+
+
+/* supprime fleche du champ input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+p{
+margin : 0;
+}
+
+main #popInsCon {
+    display: block;
+    font-family: inter;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 300px;
+    height: 40px;
+    background-color: #1F4F51;
+    font-size:1.5rem;
+    color: #FFD365;
+    text-align:center;
+    line-height:40px;
+    visibility:hidden;
+    animation-name: tmpAjouter;
+    animation-duration: 10s;
+    box-shadow: 4px 4px 10px black;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px;
+
+}
+@keyframes tmpAjouter {
+    from {
+    visibility:visible;
+    background-color: #1F4F51;}
+    to {background-color: white;
+        color: white;
+      visibility:hidden;}
+}
+
+@media (max-width:600px){
+    .block {
+        margin: 2% 0em;
+        padding: 0em 0em;
+        box-shadow: 4px 4px 10px black;
+        width: 100%;
+        border-radius: 25px;
+    }
+    .panels{
+        margin: 1em;
+    }
+    
+}
+
+#popup {
+    display: flex;
+    position: absolute;
+    font-family: inter;
+    background-color: #1F4F51;
+    top: 20%;
+    right: 0;
+    width: 250px;
+    height: 40px;
+    font-size:1.5rem;
+    color: #FFD365;
+    text-align:center;
+    line-height:40px;
+    box-shadow: 4px 4px 10px black;
+    font-weight: bold;
+    position: fixed;
+    border-radius: 10px 0 0 10px;
+    animation: slideInFromTop 1s ease;
+  
+  }
+  #popup p{
+    position: absolute;
+    margin: 0;
+    margin-left: 5px;
+    
+  }
+  
+  #close-popup{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    color: #1F4F51;
+    background-color: #FFD365;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  
+  @keyframes slideInFromTop {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  

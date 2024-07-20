@@ -1,0 +1,58 @@
+/*********main******************/
+@font-face { font-family: daysone; src: url('font/DaysOne-Regular.ttf'); }
+@font-face { font-family: inter; src: url('font/Inter-Regular.otf'); }
+
+body{
+
+    font-size: 15px;
+    font-family: inter;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(253, 253, 253);
+}
+
+main h1{
+    font-family: daysone;
+    color: #000000;
+    font-size: 40px;
+    margin: 10 0 0;
+    align-self: center;
+
+}
+main  a{
+    text-decoration: none;
+    align-items: center;
+}
+
+main div{
+    align-content: center;
+}
+
+main #boutons{
+    display: flex;
+    flex-direction:column;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    margin: 3%;
+    
+    
+}
+
+main #boutons a{
+    margin: 5%;
+    padding: 4%;
+    background-color: #1F4F51;
+    color: #FDD365;
+    font-size: 170%;
+    border-radius: 50px;
+}
+
+main #boutons a:hover{
+    background-color: #FDD365;
+    color: #1F4F51;
+}

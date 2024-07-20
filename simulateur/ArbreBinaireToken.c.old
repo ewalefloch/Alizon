@@ -1,0 +1,123 @@
+#include <stdbool.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include "proto.c"
+
+
+//Arbre Binaire
+typedef struct Noeud{
+    token* data;
+    struct Noeud* gauche;
+    struct Noeud* droite;
+} Noeud;
+
+typedef struct {
+    Noeud* racine;
+} ArbreBinaireToken;
+
+void initArbre(ArbreBinaireToken* ab){
+    ab->racine = NULL;
+}
+
+bool cmp(token c1, token c2){
+    //critere de recherche pour l'arbre binaire
+    return c1.id > c2.id;
+}
+
+void insereArbre(ArbreBinaireToken* ab, token c){
+    Noeud* it;
+    it = ab->racine; //iterator
+    bool fin = false;
+
+    if(ab->racine == NULL){ //premiere branche
+        //cree une branche
+        ab->racine = (Noeud*)malloc(sizeof(Noeud));
+        ab->racine->gauche = NULL;
+        ab->racine->droite = NULL;
+
+        //insere le token
+        token* t = (token*)malloc(sizeof(token));
+        *t = c;
+        ab->racine->data = t;
+        fin = true;
+    }
+    while(!fin){
+        if(it->data == NULL){
+            //insere le token sur la branche
+            token* t = (token*)malloc(sizeof(token));
+            *t = c;
+            it->data = t;
+            fin = true;
+        }else{
+            //si une branche existe alors y aller
+            if(cmp(*it->data, c)){ //va a gauche
+                if(it->gauche == NULL){
+                    it->gauche = (Noeud*)malloc(sizeof(Noeud));
+                    it->gauche->gauche = NULL;
+                    it->gauche->droite = NULL;
+                }
+                it = it->gauche;
+            }else{
+                if(it->droite == NULL){
+                    it->droite = (Noeud*)malloc(sizeof(Noeud));
+                    it->droite->gauche = NULL;
+                    it->droite->droite = NULL;
+                }
+                it = it->droite;
+            }
+        }
+    }
+}
+
+
+token* rechercheArbre(ArbreBinaireToken* ab, token c){
+    Noeud* it = ab->racine;
+    bool trouver = false;
+    do{
+        if(it->data->id == c.id){
+            return (token*)it->data;
+        }else if(!cmp(*it->data, c)){
+            it = it->droite;
+        }else{
+            it = it->gauche;
+        }
+    }while(!trouver && it != NULL);
+    return NULL;
+}
+
+
+
+
+// token generateToken(){
+//     token t;
+//     t.id = rand();
+//     t.expirationTime = time(0) + 3600*2; //expire dans 2h
+//     return t;
+// }
+
+// int main(){
+//     token b = {23,30};
+//     token c = {546,20};
+
+//     ArbreBinaireToken ab;
+//     initArbre(&ab);
+//     {
+//     token a = {123,40};
+//     insereArbre(&ab, a);
+//     }
+//     {
+//     token a = {123,40};
+//     insereArbre(&ab, a);
+//     }
+//     {
+//         token a = {123,40};
+//         if(rechercheArbre(&ab, a)){
+//             printf("token trouve\n");
+//         }else{
+//             printf("token non trouve\n");
+//         }
+//     }
+//     insereArbre(&ab, c);
+//     insereArbre(&ab, b);
+//     return 0;
+// }

@@ -1,0 +1,170 @@
+@font-face { font-family: daysone; src: url('font/DaysOne-Regular.ttf'); }
+@font-face { font-family: inter; src: url('font/Inter-Regular.otf'); }
+@font-face { font-family: ubuntuB; src: url('font/Ubuntu-Bold.ttf'); }
+body{
+
+    font-size: 15px;
+    font-family: inter;
+}
+
+main .formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+main{
+    height: 90vh;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #FFFF;
+    width: 400px;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+}
+main h1{
+    font-size: 40px;
+    font-family: daysone;
+    color: #FFD365;
+}
+main a{
+    text-decoration: none;
+}
+main input{
+    border: solid 2px #D3D3D3;
+    border-radius: 5px;
+    height: 25px;
+    width: 350px;
+    background-color: #e9e9e9;
+    box-shadow: 5px 5px 5px #D3D3D3;
+    margin: 10px 0 10px 0;
+}
+main input:hover{
+    border: 2px solid #999999;
+}
+main .valider{
+    font-weight: bold;
+    font-size: 20px;
+    height: 40px;
+    background-color: #1F4F51;
+    padding: 5px 30px 5px 30px;
+    border: none;
+    color: #FDD365;
+    border-radius: 25px;
+    cursor: pointer;
+}
+main .valider:hover{
+    border: none;
+    background-color: #FFD365;
+    color: #1F4F51;
+}
+main .boutons{
+    align-self: center;
+}
+main form>div{
+    margin-top: 10px;
+}
+main h2{
+    font-family: inter;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 0;
+}
+main #mdp{
+    color: red;
+    margin-bottom: 20px;
+}
+main #popInsCon {
+  display: block;
+  font-family: inter;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 300px;
+  height: 40px;
+  background-color: #1F4F51;
+  font-size:1.5rem;
+  color: #FFD365;
+  text-align:center;
+  line-height:40px;
+  visibility:hidden;
+  animation-name: tmpAjouter;
+  animation-duration: 4s;
+  box-shadow: 4px 4px 10px black;
+  font-weight: bold;
+  border-radius: 10px 0 0 10px;
+
+}
+@keyframes tmpAjouter {
+  from {
+  visibility:visible;
+  background-color: #1F4F51;}
+  to {background-color: white;
+      color: white;
+    visibility:hidden;}
+}
+
+@media only screen and (max-width : 600px) {
+    main input{
+        width: 250px;
+    }
+    main h2 {
+        margin: 10px 0px;
+    }
+}
+
+/********** Pop-Up    ************/
+
+#popup {
+    display: flex;
+    position: absolute;
+    font-family: inter;
+    background-color: #1F4F51;
+    top: 20%;
+    right: 0;
+    width: 250px;
+    height: 40px;
+    font-size:1.5rem;
+    color: #FFD365;
+    text-align:center;
+    line-height:40px;
+    box-shadow: 4px 4px 10px black;
+    font-weight: bold;
+    position: fixed;
+    border-radius: 10px 0 0 10px;
+    animation: slideInFromTop 1s ease;
+  
+  }
+  #popup p{
+    position: absolute;
+    margin: 0;
+    margin-left: 5px;
+    
+  }
+  
+  #close-popup{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    color: #1F4F51;
+    background-color: #FFD365;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  
+  
+  @keyframes slideInFromTop {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  

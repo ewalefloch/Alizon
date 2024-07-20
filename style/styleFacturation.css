@@ -1,0 +1,269 @@
+@font-face { font-family: daysone; src: url('font/DaysOne-Regular.ttf'); }
+@font-face { font-family: inter; src: url('font/Inter-Regular.otf'); }
+@font-face { font-family: ubuntuB; src: url('font/Ubuntu-Bold.ttf'); }
+body{
+
+    font-size: 15px;
+    font-family: inter;
+    background-color: rgb(253, 253, 253)    
+}
+
+main .container{
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    margin: 20px;
+}
+main{
+    height: 120vh;
+}
+
+main a{
+    text-decoration: none;
+    color: #FDD365;
+}
+
+main a:hover{
+    color: #1F4F51;
+}
+main .navigation{
+    margin:1% 0 ;
+    display: flex;
+    flex-wrap: nowrap;
+    font-weight: bold;  
+    align-self: center;
+}
+
+main .valider{
+    display: flex;
+    font-weight: bold;
+    width: 100%;
+    font-size: 15px;
+    background-color: #1F4F51;
+    padding: 5px 30px 5px 30px;
+    border: none;
+    color: #FDD365;
+    border-radius: 25px;
+    cursor: pointer;
+    
+    justify-content: center;
+    
+}
+main .valider:hover{
+    border: none;
+    background-color: #FFD365;
+    color: #1F4F51;
+}
+
+main .validerPP{
+    display: flex;
+    font-weight: bold;
+    width: 100%;
+    font-size: 15px;
+    background-color: #1F4F51;
+    padding: 5px 30px 5px 30px;
+    border: none;
+    color: #FDD365;
+    border-radius: 25px;
+    cursor: pointer;
+    
+    justify-content: center;
+    
+}
+main .validerPP:hover{
+    border: none;
+    background-color: #FFD365;
+    color: #1F4F51;
+}
+
+main img{
+    margin: 0 5px;
+    height: 5%;
+    width: 15%;
+}
+
+main .champs{
+    display: flex;
+    align-items: center;
+}
+
+main fieldset{
+    width: 70%;
+    margin-bottom: 1%;
+}
+
+main #colonne1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    
+}
+
+main #colonne2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+
+}
+
+
+main .formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+main .form{
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 400px;
+    margin: 0 0 30px 0;
+    padding: 50px;
+    box-shadow: 4px 4px 10px black;
+}
+
+main .boutForm:not(.check,.valider){
+    border: solid 2px #D3D3D3;
+    border-radius: 5px;
+    height: 25px;
+    width: 350px;
+    background-color: #e9e9e9;
+    box-shadow: 5px 5px 5px #D3D3D3;
+    margin: 10px 0 10px 0;
+
+
+}
+main .boutForm:hover{
+    border: 2px solid #999999;
+}
+
+main .boutCB{
+    margin: .8rem;
+}
+
+main .blochaut{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-shadow: 4px 4px 10px black;
+    padding-bottom: 30px;
+}
+main #choixCB{
+    padding-bottom: 1%;
+    margin-top: 5%;
+    display: none;
+    flex-direction: column;
+    width: 75%;
+    box-shadow: 4px 4px 10px black;
+}
+
+main #choixPP{
+    padding-bottom: 1%;
+    margin-top: 5%;
+    display: none;
+    flex-direction: column;
+    width: 75%;
+    box-shadow: 4px 4px 10px black;
+}
+
+main form{
+    padding-left: 5%;
+}
+
+main #cardNumber{
+    border: solid 2px #D3D3D3;
+    border-radius: 5px;
+    height: 25px;
+    width: 350px;
+    background-color: #e9e9e9;
+    box-shadow: 5px 5px 5px #D3D3D3;
+    margin: 10px 0 10px 0;
+
+} 
+main #cardNumber:hover{
+    border: 2px solid #999999;
+}
+
+main #blocVal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    box-shadow: 4px 4px 10px black;
+    padding-bottom: 30px;
+}
+
+main #commande{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+main #camion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main .env{
+    padding-left: 0%;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (max-width: 600px){
+    main .container{
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    main .boutForm:not(.check,.valider){
+        width: 250px;
+
+    
+    }
+    main .form{
+        width: 350px;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    main .blochaut {
+        width: 340px !important;
+        padding-bottom: 30px;
+        margin-right:100px; 
+        margin-left:100px; 
+
+    }
+    main #choixCB{
+        width: 340px;
+        margin-right:100px; 
+        margin-left:100px; 
+
+    }
+
+    main #choixPP{
+        width: 340px;
+        margin-right: 100px; 
+        margin-left: 100px; 
+
+    }
+    main .navigation{
+        padding: 15px;
+    }
+    main{
+        height: 170vh !important;
+    }
+
+    main #cardNumber{
+        width: 250px;
+    }
+}

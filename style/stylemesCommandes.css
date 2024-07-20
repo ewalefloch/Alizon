@@ -1,0 +1,416 @@
+:root {
+  --line-border-fill: #1F4F51;
+  --line-border-empty: #e0e0e0;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/*body {
+  background: #F3F4F6;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}*/
+
+main .container {
+  margin-top: 15px;
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25vh;
+  overflow: hidden;
+  margin: 0;
+  border-radius: 25%;
+}
+
+main .progresscontainer::before {
+  content: "";
+  background: var(--line-border-empty);
+  position: absolute;
+  top: 44%;
+  left: 2%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 93%;
+  z-index: -1;
+}
+
+main .progresscontainer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 800px;
+  z-index: 1;
+}
+
+main .progress {
+  background: var(--line-border-fill);
+  position: absolute;
+  top: 34%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+main .circle {
+  background: #fff;
+  color: #999;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--line-border-empty);
+  transition: .4s ease;
+}
+
+main .circle.active {
+  color: #1F4F51;
+  border-color: var(--line-border-fill);
+}
+
+main .btn {
+  background-color: var(--line-border-fill);
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+
+main .btn:active {
+  transform: scale(0.98);
+}
+
+main .btn:focus {
+  outline: 0;
+}
+
+main .btn:disabled {
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
+}
+
+
+/****main***/
+main {
+  font-family: inter;
+  margin-top: 3em;
+  background-color: white;
+}
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: none;
+  width: 100%;   
+
+}
+
+main div {
+  display:flex;
+  background-color: #FFFFFF;
+  height: 290px;
+  border: 10px;
+  margin: 15px;
+  padding-bottom: 0px;
+  width: 100%;
+  justify-content: space-around;
+
+}
+
+main h2 {
+  font-family: daysone;
+  display: flex;
+  align-items: center;
+  color: #FDD365;
+  background-color: #1F4F51;
+  height : 75px;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 5px;
+  font-size: 120%;
+  border-radius:0 1em 1em 0 ;
+}
+
+main div figure {
+  display: flex;
+  align-items: center;
+  
+}
+
+main section {
+  margin: 0;
+}
+main section article{
+  font-family:inter;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 40%;
+  border: 10px;
+}
+
+main section p {
+  margin-left: 10px;
+}
+
+main div .article1{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: 16px 40px;
+  width: 25%;
+}
+
+main .nom_art{
+  font-weight: bold;
+  font-size: 25px;
+  width: 350px;
+}
+
+main .num_com{
+  width: 350px;
+}
+
+main .date_com{
+  width: 350px;
+}
+
+main .quantite{
+  width: 350px;
+}
+
+main div .article2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+  width: 20%;
+}
+
+main .prix{
+  float: right;
+}
+
+main .ajouter {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 10px;
+  background-color: #1F4F51;
+  text-align: center;
+  color: #FDD365;
+  border-radius: 25px;
+  border:none;
+  text-decoration: none;
+  margin-bottom: 2em;
+  padding: 20px;
+  font-size: 125%;
+}
+
+main .barre {
+  display: flex;
+  height:10px;
+  width:75%;
+  background-color: #1F4F51;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 15px;   
+}
+
+
+
+main .item {
+  border: solid 1px #1F4F51;
+  border-radius: 1em;
+  width: 80%;
+  margin-left: 10%;
+
+}
+
+main .info_com{
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: stretch;
+}
+
+main .prix_com{
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+main .commande_princ {
+  border: solid 1px #1F4F51;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  
+  justify-content: space-around;
+  align-items: center ;
+  background-color: #FFFFFF;
+  margin: 3%;
+  text-align: center;
+  width:95%;
+}
+
+
+main .commande_princ p{
+  display: flex;
+  font-size: 130%;
+}
+
+main .maincomm{
+  display: flex;
+  flex-direction: row;
+  height:50%;
+}
+
+main .valide{
+  background-color: #1F4F51;
+  color: #FDD365;
+  padding: 15px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+main .carrecommande{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width:fit-content;
+}
+
+main .carremagique{
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width:fit-content;
+}
+
+main .unecomm{
+  background-color: white;
+  height:fit-content;
+  width:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  border-radius: 2em;
+  box-shadow: 4px 4px 10px black;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+main .unecomm > img{
+  width: 5%;
+  cursor:pointer;
+}
+
+main .item figure img{
+  border-right: solid #1F4F51 1px;
+  object-fit:scale-down;
+
+}
+
+@media (max-width:600px){
+  /*main section{
+    display: none;
+  }
+  main .item{
+    display: none;
+  }*/
+  main .unecomm{
+    margin: 5px;
+  }
+  main .maincomm{
+    flex-direction: column;
+  }
+  main .commande_princ p {
+    padding: 5px;
+  }
+  main .circle{
+    height: 90px;
+    width: 90px;
+    margin: 2px;
+  }
+  main .progresscontainer{
+    width: 100%;
+    margin: 0;
+    height: 50%;
+  }
+  main .progresscontainer::before{
+    top:50%;
+  }
+
+  main .item{
+    width: 90%;
+    margin-left: 5%;
+  }
+  main div figure{
+    width:40%;
+  }
+  main .item figure img{
+    width: 100%;
+  
+  }
+  main .nom_art{
+    width: 100%;
+  }
+  main .quantite{
+    width: 100%;
+  }
+  main div .article1{
+    margin-left: 1%;
+    justify-content: space-evenly;
+    margin-right: 1%;
+  }
+  main .item figure img {
+    border-right:none;
+  }
+  main div .article2 {
+    justify-content: space-evenly;
+  }
+  main .unecomm > img{
+    width: 20%;
+  }
+}

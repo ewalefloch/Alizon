@@ -1,0 +1,230 @@
+@font-face { font-family: daysone; src: url('../font/DaysOne-Regular.ttf'); }
+@font-face { font-family: inter; src: url(../font/Inter.ttf);}
+
+:root {
+    /* --couleur_fond: #fff;
+    --couleur_block: #E5F1FF; */
+
+    --couleur_fond: rgb(253, 253, 253);
+    --couleur_block: #fff;
+}
+
+
+main{
+    min-height: 65vh;
+}
+body{
+    background-color: var(--couleur_fond);
+    font-family: inter;
+    
+}
+
+main input{
+    object-fit: scale-down;
+}
+
+.banniere {
+    width: 100%;
+}
+
+.liste{
+    margin: 30px;
+    background-color: var(--couleur_block);
+    /* box-shadow: 4px 4px 10px black;
+    border-radius: 10px; */
+}
+
+#entete {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+}
+
+#entete #libelle{
+    background-color: #1F4F51;
+    color: #FFD365;
+    border-radius: 10px 10px 0 0 ;
+    margin: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-height: 100%;
+}
+
+
+#entete #desciption{
+
+    margin-top: 0px;
+    padding-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.img_categorie {
+    position: relative;
+    margin: 30px;
+    padding: 5px;
+    box-shadow: 4px 4px 10px black;
+    border-radius: 10px;
+    text-align: center;
+    display:inline-flex;
+    transition: transform .7s;
+}
+
+.img_categorie:hover {
+    transform: scale(1.2);
+}
+
+.img_categorie container_categorie {
+    display: flex;
+}
+
+.img_categorie img {
+    max-width: 200px;
+        max-height: 200px;
+        object-fit: cover;
+        align-items: center;
+        align-self: center;
+}
+
+.bloc_categorie {
+    display: flex;
+    text-align: center;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.article{
+    position: relative;
+    margin: 30px;
+    padding: 5px;
+    /* box-shadow: 4px 4px 10px black; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-shadow: 4px 4px 10px black;
+    border-radius: 0 10px 10px 10px;
+    padding: 10px 0;
+}
+
+
+.images img{
+    width: 200px;
+    height: 200px;
+}
+
+
+.bloc-prix {
+    position: absolute;
+    background-color: #000000ba;
+    color: white;
+    bottom: 40px;
+    right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+.bloc-reduc{
+    position: absolute;
+    background-color: #ff0000d2;
+
+    color: white;
+    top: 5px;
+    right: 10px;
+    border-radius: 2em;
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.bloc-prix h3, h4{
+    margin: 0.3em;
+}
+.conteneur{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ajoutPanier{
+    width: 30px;
+    height: 30px;
+}
+
+main .titre{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    border: none;
+    background-color: white;
+    font-family: inter;
+    font-size: 20px;
+    white-space: nowrap;
+    width: 130px;
+    overflow: hidden;
+}
+
+.titre:hover {
+    color: grey;
+}
+
+main #popInsCon {
+    display: block;
+    font-family: inter;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 300px;
+    height: 40px;
+    background-color: #1F4F51;
+    font-size:1.5rem;
+    color: #FFD365;
+    text-align:center;
+    line-height:40px;
+    visibility:hidden;
+    animation-name: tmpAjouter;
+    animation-duration: 4s;
+    box-shadow: 4px 4px 10px black;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px;
+
+}
+@keyframes tmpAjouter {
+    from {
+    visibility:visible;
+    background-color: #1F4F51;}
+    to {background-color: white;
+        color: white;
+      visibility:hidden;}
+}
+
+@media only screen and (max-width: 600px) {
+    main #entete{
+        flex-wrap: wrap;
+    }
+    main #libelle{
+        text-align: center;
+        border-radius: 0 !important;
+        width: 100%;
+        box-shadow: none !important;
+    }
+    main #entete #desciption{
+        text-align: center;
+    }
+
+    .bloc_categorie {
+        display: none;
+    }
+
+    .banniere {
+        display: none;
+    }
+}

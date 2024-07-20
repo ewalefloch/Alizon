@@ -1,0 +1,465 @@
+@font-face { font-family: daysone; src: url('font/DaysOne-Regular.ttf'); }
+@font-face { font-family: inter; src: url('font/Inter-Regular.otf'); }
+@font-face { font-family: ubuntuB; src: url('font/Ubuntu-Bold.ttf'); }
+:root {
+    /* --couleur_fond: #fff;
+    --couleur_block: #E5F1FF; */
+
+    --couleur_fond: rgb(253, 253, 253);
+    --couleur_block: #fff;
+}
+
+body{
+    background-color: var(--couleur_fond);
+    font-family: inter;
+    padding: 0px;
+}
+input{
+    text-transform: capitalize;
+    object-fit: scale-down;
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main #popInsCon {
+    display: block;
+    font-family: inter;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 300px;
+    height: 40px;
+    background-color: #1F4F51;
+    font-size:1.5rem;
+    color: #FFD365;
+    text-align:center;
+    line-height:40px;
+    visibility:hidden;
+    animation-name: tmpAjouter;
+    animation-duration: 10s;
+    box-shadow: 4px 4px 10px black;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px;
+
+}
+@keyframes tmpAjouter {
+    from {
+    visibility:visible;
+    background-color: #1F4F51;}
+    to {background-color: white;
+        color: white;
+      visibility:hidden;}
+}
+
+main .images img{
+    width: 150px;
+    height: 150px;
+}
+main #asideGauche img{
+    width: 150px;
+    height: 150px;
+}
+
+main .conteneur{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .article{
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+main .bloc-prix {
+    position: absolute;
+    background-color: #000000ba;
+    color: white;
+    bottom: 40px;
+    right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+main .bloc-reduc{
+    position: absolute;
+    background-color: #ff0000d2;
+
+    color: white;
+    top: 5px;
+    right: 10px;
+    border-radius: 2em;
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+main .bloc-prix h3, h4{
+    margin: 0.3em;
+}
+
+main .bloc{
+    margin: 20px;
+    padding: 50px;
+}
+
+#centre, #asideGauche, #asideDroit div{
+    background-color: var(--couleur_block);
+}
+
+main #asideDroit{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px;
+    
+    gap: 40px;
+    width: 250px;
+
+    margin-left: 0px;
+}
+
+main #asideDroit > div{
+    box-shadow: 4px 4px 10px black;
+    width: 100%;
+}
+/*#asideDroit:hover{
+    width: 12em;
+    transition: 0.3s;
+}*/
+
+main #asideDroit>*:first-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*centre y*/
+    width: 100%;
+}
+
+main #filtrer h2{
+    justify-self: flex-start;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+main #asideDroit>*:last-child{
+    flex-grow: 15;
+}
+
+main #asideDroit form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;/*centre x*/
+    align-items: center; /*centre y*/
+}
+
+
+/* bouton categorie */
+ul{
+    list-style: none;
+    text-decoration: none;
+}
+main .titrefiltre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    
+    
+}
+main .titrefiltre h2{
+    width: 60%;
+}
+main .titrefiltre:hover{
+    background-color: #b9c3ce !important;
+}
+main .titrefiltre img{
+    width:30px;
+    height: 20px;
+    padding: 15px;
+}
+main .categorie{
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+main .souscategorie{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+
+main .categorie:hover{
+    background-color: #b9c3ce;
+}
+main #cate{
+    display: none ;
+}
+main hr{
+    width: 60%;
+}
+main #vend{
+    display: none;
+}
+
+main .vendeur{
+    font-size: 1em;
+    font-weight: normal;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+main .vendeur:hover{
+    background-color: #b9c3ce;
+}
+
+main #asideDroit form li{
+    margin: 5px;
+}
+main #asideDroit a p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /*centre x*/
+    align-items: center; /*centre y*/
+}
+
+main .titre{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    font-family: inter;
+    font-size: 20px;
+    padding: 0px;
+    font-weight: bold;
+    white-space: nowrap;
+    width: 130px;
+    overflow: hidden;
+
+}
+main .titre:hover{
+    color: gray;
+}
+main .ajoutPanier{
+    width: 30px;
+    height: 30px;
+}
+
+main #centre{
+    width: 50%;
+    box-shadow: 4px 4px 10px black
+    
+}
+
+main #asideGauche{
+    width: 10%;
+    padding: 3%;
+    margin-right: 0px;
+    box-shadow: 4px 4px 10px black;
+}
+
+main #asideGauche h2{
+    font-size: 20px;
+}
+main .boutonAnnuleCategorie{
+    font-size: 1em;
+    border: none;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+main .wrapper{
+    position: relative;
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+main .container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+input[type="range"]{
+   appearance: none; 
+   width: 100%;
+   outline: none;
+   position: absolute;
+   margin: auto;
+   top: 0;
+   bottom: 0;
+   background-color: transparent;
+   pointer-events: none;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+main .filtre h2{
+    cursor: pointer;
+}
+
+.slider-track{
+    width: 95%;
+    height:5px;
+    background-color: #1F4F51;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: solid #1F4F51 2px;
+     border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    height: 1em;
+    width: 1em;
+    background-color: #1F4F51;
+    cursor: pointer;
+    border-radius:10px ;
+    pointer-events: auto;
+}
+
+input[type="range"]:active::-webkit-slider-thumb{
+    background-color: white;
+    border: 3px solid #1F4F51;
+}
+
+.values{
+    background-color: #1F4F51;
+    width: 70%;
+    position: relative;
+    margin: auto;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    color: #FFD365;
+}
+
+main .valider{
+    font-size: 10px;
+    height: 20px;
+    background-color: #1F4F51;
+    padding: 5px 30px 5px 30px;
+    border: none;
+    color: #FDD365;
+    border-radius: 25px;
+}
+
+main .formPortable{
+    display: none !important;
+}
+main .nomArticle{
+    display: flex;
+}
+main .bloc > p {
+    text-align: center;
+}
+main #bad{
+    font-size: 10em;
+    margin: 10px;
+}
+@media only screen and (max-width : 600px) {
+    main .formPortable{
+        display: flex !important;
+    }
+    main #filtrer h2{
+        margin: 10px;
+    }
+    main #asideDroit{
+        width: 100%;
+    }
+    main #filtrer{
+        width: 100% !important;
+        margin: 20px 0;
+        padding: 10px;
+    }
+
+    main .values{
+        margin: auto auto 10px auto;
+    }
+    main .wrapper{
+        width: 50%;
+    }
+    main select{
+        margin: 10px;
+    }
+    main .bloc{
+        margin: 0;
+    }
+    main .filtre{
+        display: none;
+    }
+    main .conteneur{
+        flex-direction: column;
+    }
+    #asideGauche {
+      display: none;
+      padding: 0;
+      margin: 0;
+      width: 0;
+    }
+    .values{
+        width:max-content;
+    }
+    main h2{
+        margin-top: 20px;
+    }
+    #centre{
+        width: 100%;
+    }
+    .portable{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        align-items: center;
+
+    }
+
+    .portable .wrapper{
+        margin-bottom:0 ;
+    }
+
+    .portable #formPortable{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .portable .valider{
+        margin-top: 5px;
+    }
+    .portable #range1{
+        font-size: 15px;
+    }
+    .portable #range2{
+        font-size: 15px;
+    }
+    .portable .values{
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    .portable .container{
+        width: 70%;
+    }
+    
+
+}

@@ -1,0 +1,148 @@
+@font-face { font-family: daysone; src: url('font/DaysOne-Regular.ttf'); }
+@font-face { font-family: inter; src: url('font/Inter-Regular.otf'); }
+
+body{
+
+    font-size: 15px;
+    font-family: inter;
+}
+main h1{
+    font-family: daysone;
+    color: black;
+    font-size: 40px;
+    margin: 10 0 0;
+    align-self: center;
+}
+main a{
+    text-decoration: none;
+}
+main .formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+main form{
+
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 400px;
+    margin: 30px 0 30px 0;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+}
+main form>div{
+    margin-top: 20px;
+}
+main br {
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 10px; /* change this to whatever height you want it */
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+main label{
+    margin-top: 15px;
+    width: 200px;
+}
+main input:not(.check,.valider){
+    border: solid 2px #D3D3D3;
+    border-radius: 5px;
+    height: 25px;
+    width: 350px;
+    background-color: #e9e9e9;
+    box-shadow: 5px 5px 5px #D3D3D3;
+    margin: 0px 0 0 0;
+
+}
+main input:hover{
+    border: 2px solid #999999;
+}
+
+main .valider{
+    font-weight: bold;
+    font-size: 20px;
+    height: 40px;
+    background-color: #1F4F51;
+    padding: 5px 30px 5px 30px;
+    border: none;
+    color: #FDD365;
+    border-radius: 25px;
+}
+main .valider:hover{
+    border: none;
+    background-color: #FFD365;
+    color: #1F4F51;
+}
+main form>p{
+    color: red;
+}
+main .boutons{
+    align-self: center;
+}
+main #creer{
+    width: 100%;
+    text-align: center;
+    color: #1F4F51;
+    font-size: 25px;
+    margin: 10px;
+}
+main #client{
+    margin-bottom: 20px;
+}
+main p{
+    margin: 5px 0 20px 0; 
+}
+
+main #popInsCon {
+    display: block;
+    font-family: inter;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 300px;
+    height: 40px;
+    background-color: #1F4F51;
+    font-size:1.5rem;
+    color: #FFD365;
+    text-align:center;
+    line-height:40px;
+    visibility:hidden;
+    animation-name: tmpAjouter;
+    animation-duration: 4s;
+    box-shadow: 4px 4px 10px black;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px;
+
+}
+@keyframes tmpAjouter {
+    from {
+    visibility:visible;
+    background-color: #1F4F51;}
+    to {background-color: white;
+        color: white;
+      visibility:hidden;}
+}
+
+
+
+/************image***************************/
+#img-preview {
+    display: none; 
+    width: 155px;   
+    border: 2px dashed #333;  
+    margin-bottom: 20px;
+  }
+  #img-preview img {  
+    width: 100%;
+    height: auto; 
+    display: block;   
+  }

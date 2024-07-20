@@ -1,0 +1,579 @@
+@font-face { font-family: daysone; src: url('font/DaysOne-Regular.ttf'); }
+@font-face { font-family: inter; src: url('font/Inter-Regular.otf'); }
+@font-face { font-family: ubuntuB; src: url('font/Ubuntu-Bold.ttf'); }
+/*E5F1FF*/
+
+
+
+
+main {
+    font-family:inter;
+    background-color: rgb(253, 253, 253);
+    min-height: 80vh;
+}
+
+
+main .tout{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+main h3{
+    font-size: 12em;
+    color: #1F4F51;
+    font-family: daysone;
+    padding: 50px;
+}
+
+
+
+
+main div>span{
+    width: 100%;
+}
+
+
+
+
+main .ancienPrix{
+    color: red;
+    text-decoration: line-through;
+    margin: 0 10px;
+}
+
+main div figure {
+    float: left;
+    margin: 15px 15px 15px 15px;
+    width: 25%;
+    height: 100%;
+}
+
+main .colonne1{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+}
+
+
+
+main h3{
+    margin: 0;
+}
+main>div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+main .hautpanier{
+    align-items: center;
+}
+
+main .panier{
+    font-size: 30px;
+    font-family: daysone;
+    width: 150px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    padding: 5px 20px 5px;
+    background-color: #1F4F51;
+    text-align: center;
+    color: #FDD365;
+    border:none;
+    text-decoration: none;
+    margin: 0;
+
+}
+/*BOUTON SUPPRIMER*/
+
+
+main .supprHaut{
+    margin-right: 1em;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #1F4F51;
+    color: #FDD365;
+    border : none;
+    cursor: pointer;
+}
+main .supprHaut:hover{
+    background-color: #FDD365;
+    color: #1F4F51;
+    border : none;
+    
+}
+/*
+main .maj{
+    background-color: #1F4F51;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    border-radius: 20px;
+    color: #FDD365;
+    border : none;
+}
+
+main .maj:hover{
+    background-color: #FDD365;
+    color: #1F4F51;
+    border : none;
+
+}*/
+
+
+
+/*RECAPITULATIF*/
+main .colonne2{
+    display: flex;
+    width: 100%;
+    flex-direction: column; 
+    flex-shrink:4;
+
+}
+main  #recapHaut{
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 4px 4px 10px black;
+    position: sticky;
+    top: 10px;    
+    width: 400px;
+    max-width: 100%;
+    min-height: 200px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px #1F4F51;
+
+}
+
+main  #hautConnecter{
+    margin: 20px;
+    box-shadow: 4px 4px 10px black;
+    position: sticky;
+    top: 10px;    
+    width: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px #1F4F51;
+}
+
+main  #hautConnecter a{
+    text-decoration: none;
+}
+main .txtRecap{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+main #titreRec{
+    font-size: 25px;
+    margin-top: 1%;
+    padding: 1%;
+    border: solid 1px #1F4F51;
+}
+
+
+
+
+main .titreArt{
+ 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+ /*Recapitulatif bas*/
+
+main #recBas{
+    display: flex;
+    border-top: solid 1px #1F4F51;
+}
+
+main .prixarticleTotale{
+    display: block;
+    width: 10em;
+}
+main .prix{
+    margin-left: 10px;
+
+}
+
+main .ancienPrix
+main .prixT{
+    font-weight: bold;
+    text-align: center;
+    margin-right: 5%;
+}
+main .prixT{
+    text-align: center;
+}
+
+main #BoutCommander{
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #1F4F51;
+    padding: 15px;
+    color: #FDD365;
+    border: none;
+    border-radius: 25px;
+    align-self: center;
+    text-decoration: none;
+    margin: 10px;
+}
+
+/*FENETRE CONNEXION INSCRIPTION*/
+
+main #titrePop{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    top :20px;
+    background-color: #ffffff;
+    
+    margin: 15px;
+    justify-content: space-around;
+    align-items:center;
+    border: solid 1px #1F4F51;
+
+}
+main .divPopUp{
+    display: flex;
+    flex-direction: column ;
+    justify-content: flex-start;
+}
+main .fermer{
+    font-weight: bold;
+    font-size: 15px;
+    height: 40px;
+    background-color: #1F4F51;
+    margin-top: 1%;
+    padding: 5px 30px 5px 30px;
+    border: none;
+    color: #FDD365;
+    border-radius: 25px;
+    width: 30%;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+main .fermer:hover{
+    background-color: #FDD365;
+    color: #1F4F51;
+}
+main #BoutCommander:hover{
+    background-color: #FDD365;
+    color: #1F4F51;
+}
+main .connIns{
+font-weight: bold;
+font-size: 15px;
+height: 40px;
+background-color: #1F4F51;
+padding: 5px 30px 5px 30px;
+border: none;
+color: #FDD365;
+border-radius: 25px;
+width: 30%;
+align-self: center;
+}
+main .connIns:hover{
+background-color: #FDD365;
+color: #1F4F51;
+}
+/*Nouveau*/
+
+/*Affichage d'un article*/
+main .article1 {
+    
+    border: 10px;
+    background-color: #ffffff;
+    display: flex;
+    margin: 20px;
+    border: solid 1px #1F4F51;
+    box-shadow: 4px 4px 10px black;
+    justify-content: space-between;
+}
+main .hautArt{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 4;
+}
+
+main .titre{
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 2em;
+}
+main .prixArt{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+main .prixArtGris{
+    display: block;
+    color: grey;
+    font-size: 15px;
+    width:10em; 
+
+}
+main .connect{
+  
+    width: 200px;
+    margin: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #1F4F51;
+    color: #FDD365;
+    border : none;
+    padding: 10px;
+    cursor: pointer;
+}
+main .suppr{
+    border-radius: 20px;
+    background-color: #1F4F51;
+    color: #FDD365;
+    border : none;
+    padding: 10px;
+    cursor: pointer;
+}
+main .suppr:hover{
+    background-color: #FDD365;
+    color: #1F4F51;
+    border : none;
+
+}
+main .prixArt>span{
+    font-size: 15px;
+}
+main .prixArticle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+main .prixArticle>p{
+    margin: 10px;
+}
+main .stockR{
+    font-size: 15px;
+    font-style: italic ;
+    color: red;
+}
+main .stockV{
+    font-size: 15px;
+    font-style: italic ;
+    color: green;
+}
+main .Boutquantite{
+    margin-left: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+}
+main .article1 img{
+    width: 200px;
+    margin: 10px;
+    align-self: center;
+}
+main .boutonSupprimer{
+    margin: 10px;
+    align-self: flex-end;
+
+}
+main .description{
+    padding: 10px;
+}
+main .prixArticle>div{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+main #popInsCon {
+    display: block;
+    font-family: inter;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 300px;
+    height: 40px;
+    background-color: #1F4F51;
+    font-size:1.5rem;
+    color: #FFD365;
+    text-align:center;
+    line-height:40px;
+    visibility:hidden;
+    animation-name: tmpAjouter;
+    animation-duration: 4s;
+    box-shadow: 4px 4px 10px black;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px;
+
+}
+main .totaleResponsive{
+    position: fixed;
+    bottom: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: white;
+    align-items: center;
+    height: 70px;
+
+}
+main #recapResponsive{
+    position: fixed;
+    bottom: 150px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-top: solid 1px;
+    box-shadow: 4px 4px 10px black;
+    transition: display 4s;
+}
+main .imgResponsive{
+    position: fixed;
+    bottom: 137px;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    border-top: solid 1px;
+}
+main .imgResponsive>img{
+    width: 40px;
+    cursor: pointer;
+    padding-top: 5px;
+}
+main .plus{
+    padding:10px;
+    color: grey;
+    
+    cursor: pointer;
+}
+main .plus:hover{
+    color:rgb(70, 70, 70)
+}
+main .grand{
+    display: none;
+}
+main .vide a,main p,main img{
+    margin: 10px;
+}
+main .vide a{
+    margin-right: 1em;
+    display: flex;
+    padding: 15px 40px;
+    background-color: #1F4F51;
+    color: #FDD365;
+    border : none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+main .vide p{
+    text-align: center;
+}
+main .vide a:hover{
+    background-color: #FDD365;
+    color: #1F4F51;
+}
+main .vide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 150px;
+    font-size: 20px;
+}
+@keyframes tmpAjouter {
+    from {
+    visibility:visible;
+    background-color: #1F4F51;}
+    to {background-color: white;
+        color: white;
+      visibility:hidden;}
+}
+@media only screen and (min-width:600px){
+    main .recapResponsive{
+        display: none;
+    }
+    main .totaleResponsive{
+        display: none;
+    }
+    main .imgResponsive{
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px){
+    main .colonne2{
+        display: none;
+    }
+    main #titreRec{
+        border: none !important;
+    }
+    main #recBas{
+        border: none ;
+        width: 150%;
+        align-items: center;
+    }
+    main #BoutCommander{
+        padding: 10px;
+        margin: 10px;
+    }
+    main .txtRecap{
+        padding: 10px;
+    }
+    main .article1{
+        flex-direction: column;
+    }
+    main .description form{
+        text-align: center;
+        margin: 10px;
+    }
+    main .prixArtGris{
+        width: 100%;
+    }
+    main .stockR,.stockV,.Boutquantite p,.prixArt,.prixArtGris{
+        text-align: center;
+    }
+    main .description>p,.description>a>p{
+        padding:10px;
+    }
+    
+    main h3{
+        font-size: 8em;
+    }
+    main .hautpanier{
+        background-color: white;
+        width: 100%;
+        position: sticky;
+        top: 0px;
+        padding: 10px 0;
+    }
+    main .ancienPrix{
+        text-align: center;
+    }
+
+}

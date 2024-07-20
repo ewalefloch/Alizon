@@ -1,0 +1,191 @@
+@font-face {
+  font-family: daysone;
+  src: url("../font/DaysOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: inter;
+  src: url(../font/Inter.ttf);
+}
+
+body {
+  font-family: inter;
+}
+
+.shadow {
+  -webkit-box-shadow: 4px 4px 10px black;
+          box-shadow: 4px 4px 10px black;
+  border-radius: 10px;
+  margin: 2% 10%;
+  height: 80%;
+}
+
+.frame {
+  padding: 1% 4% 4% 4%;
+}
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #9f9f9f;
+}
+
+input:hover {
+  border-color: black;
+}
+
+.hcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+}
+
+.vcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 100%;
+}
+
+.champ {
+  padding: 1em;
+}
+
+.listeArticle {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.article {
+  position: relative;
+  margin: 30px;
+}
+
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.images img {
+  width: 200px;
+  height: 200px;
+}
+
+.bloc-prix {
+  position: absolute;
+  background-color: #000000ba;
+  color: white;
+  bottom: 40px;
+  right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 5px;
+}
+
+.bloc-reduc {
+  position: absolute;
+  background-color: #ff0000d2;
+  color: white;
+  top: 5px;
+  right: 10px;
+  border-radius: 2em;
+  border: solid;
+  border-width: 2px;
+  border-color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.bloc-prix h3, h4 {
+  margin: 0.3em;
+}
+
+.conteneur {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ajoutPanier {
+  width: 30px;
+  height: 30px;
+}
+
+main .titre {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  border: none;
+  background-color: white;
+  font-family: inter;
+  font-size: 20px;
+  white-space: nowrap;
+  width: 130px;
+  overflow: hidden;
+}
+
+.titre:hover {
+  color: grey;
+}
+
+main #popInsCon {
+  display: block;
+  font-family: inter;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 300px;
+  height: 40px;
+  background-color: #1F4F51;
+  font-size: 1.5rem;
+  color: #FFD365;
+  text-align: center;
+  line-height: 40px;
+  visibility: hidden;
+  -webkit-animation-name: tmpAjouter;
+          animation-name: tmpAjouter;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-box-shadow: 4px 4px 10px black;
+          box-shadow: 4px 4px 10px black;
+  font-weight: bold;
+  border-radius: 10px 0 0 10px;
+}
+
+.cell {
+  size: 1.1em;
+  margin: 0em 0.5em;
+  border-radius: 5px;
+}
+
+.cellhover {
+  color: grey;
+  border-bottom: black 1px;
+}
+
+#logo {
+  border-radius: 20px;
+}
+/*# sourceMappingURL=styleVendeur.css.map */

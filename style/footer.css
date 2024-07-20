@@ -1,0 +1,94 @@
+@font-face { font-family: daysone; src: url('../font/DaysOne-Regular.ttf'); }
+@font-face { font-family: inter; src: url(../font/Inter.ttf);}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+footer .bas{
+    background-color: #1F4F51;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+footer{
+    font-family: inter;
+    font-size: 17px;
+    background-color: rgba(31, 79, 81, 0.7);
+    color: white;
+}
+footer img{
+    width: 40px;
+    margin: 0 10px 0 10px;
+}
+footer h2{
+    font-size: 20px;
+    width: 100%;
+}
+footer .back{
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    
+}
+footer div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    margin: 0 10px 0 10px;
+    text-decoration: none;
+}
+footer a:link{
+    color: white;
+}
+footer a:visited{
+    color: white;
+}
+
+footer h2{
+    text-align: center;
+}
+footer p{
+    padding: 20px;
+}
+footer .bas>div{
+    flex-basis: 300px;
+}
+#colissimo{
+    width: 120px;
+}
+
+@media (min-width:601px){
+    footer .responsive{
+        display: none;
+    }
+}
+/*RESPONSIVE*/
+
+@media (max-width:600px) {
+    footer{
+        background-color: #1F4F51;
+        width: 100%;
+        margin-top: 150px;
+    }
+    footer .bas{
+        display: none;
+    }
+   
+    footer .responsive{
+        width: -webkit-fill-available;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        height: 80px;
+        background-color: #1F4F51;
+        position: fixed;
+        bottom: 0;
+        z-index: 13;
+    }
+    
+}

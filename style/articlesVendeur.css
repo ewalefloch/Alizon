@@ -1,0 +1,85 @@
+@font-face {
+  font-family: daysone;
+  src: url("../font/DaysOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: inter;
+  src: url(../font/Inter.ttf);
+}
+
+main {
+  font-family: inter;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main h1 {
+  margin: 50px 100px 0 0px;
+  color: #FDD365;
+  background-color: #1F4F51;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px;
+  font-family: daysone;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 50px 25px;
+  font-size: 15px;
+}
+
+table td, table th, table tr {
+  padding: 3px;
+  height: 40px;
+}
+
+table th {
+  background-color: #3A3838;
+  color: white;
+  padding: 5px;
+  min-width: 40px;
+  cursor: pointer;
+}
+
+table th:not(.petit):not(.descript) {
+  min-width: 100px;
+}
+
+table .grand {
+  min-width: 140px !important;
+}
+
+table .descript {
+  min-width: 300px;
+}
+
+table td:not(.descript) {
+  text-align: center;
+}
+
+table tr:nth-child(even) {
+  background-color: #F8F8F8;
+}
+
+table .vide {
+  height: 40px;
+}
+
+table input {
+  background-color: initial !important;
+  border: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=articlesVendeur.css.map */

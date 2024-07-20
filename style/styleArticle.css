@@ -1,0 +1,385 @@
+@font-face { font-family: daysone; src: url('../font/DaysOne-Regular.ttf'); }
+@font-face { font-family: inter; src: url(../font/Inter.ttf);}
+
+body {
+  font-size: 15px;
+  background-color: rgb(253, 253, 253);
+}
+
+main {
+  padding: 2%;
+}
+
+main h2 {
+  font-family: inter;
+  font-size: 2.5em;
+}
+
+main p {
+  font-family: inter;
+  font-size: 20px;
+  text-align: justify ;
+  padding: 10px;
+}
+
+main form {
+  font-size: 110%;
+  font-family: inter;
+  text-align: center;
+}
+main .monarticle {
+  display: flex;
+  margin: 0 20px 0 20px;
+  padding:10px;
+  box-shadow: 4px 4px 10px black;
+}
+
+main .grpImg {
+  order: 1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 3;
+  flex-basis: 20%;
+  margin-right: 10px;
+  width:100%;
+  align-self: flex-start;
+}
+
+main #popInsCon {
+    display: block;
+    font-family: inter;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    width: 300px;
+    height: 40px;
+    background-color: #1F4F51;
+    font-size:1.5rem;
+    color: #FFD365;
+    text-align:center;
+    line-height:40px;
+    visibility:hidden;
+    animation-name: tmpAjouter;
+    animation-duration: 10s;
+    box-shadow: 4px 4px 10px black;
+    font-weight: bold;
+    border-radius: 10px 0 0 10px;
+
+}
+@keyframes tmpAjouter {
+    from {
+    visibility:visible;
+    background-color: #1F4F51;}
+    to {background-color: white;
+        color: white;
+      visibility:hidden;}
+}
+
+main .chemin {
+  font-family: inter;
+  width: 100%;
+  height: 60px;
+  order: 1;
+}
+
+main .chemin > p {
+  margin: 0;
+}
+
+main .imgArt {
+  background-color: white;
+  order: 2;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-self: flex-end;
+  height: fit-content;
+  object-fit: cover;
+}
+
+main .imgArt1 {
+  order: 1;
+  width: 100%;
+}
+
+main .imgArt2 {
+  order: 2;
+  margin: 0;
+}
+
+main .imgArt3 {
+  order: 3;
+  margin: 0;
+}
+
+main .description {
+  margin: 0 10px 0 10px;
+  order: 2;
+  flex-grow: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+main .titleDesc {
+  order: 1;
+  width: 100%;
+  margin: 0;
+  height: 60px;
+  text-align: center;
+  align-self: flex-start;
+}
+
+main .descP {
+  background-color: white;
+  margin-bottom: 20px;
+  align-self: flex-end;
+  order: 2;
+  
+  width: 100%; 
+  
+}
+main .descPortable {
+  background-color: white;
+  margin-bottom: 20px;
+  align-self: flex-end;
+  order: 2;
+  display: none;
+  width: 100%; 
+  
+}
+main .descP > p {
+  padding: 20px;
+}
+
+main .prix {
+  background-color: white;
+  border: solid 1px black;
+  order: 3;
+  align-self: stretch;
+  margin: 0 0 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 25%;
+  font-size: 110%;
+  font-family: inter;
+  justify-content: center;
+  height: 30em;
+  width: 300px;
+}
+
+
+main .prix > h2 {
+  order: 0;
+  text-align: center;
+  font-family: inter;
+  font-weight: bold;
+  width: 100%;
+  height: fit-content;
+  margin: 10%;
+  
+}
+
+main .prix > p{
+  order:1;
+  color: grey;
+  font-size: 100%;
+  margin:0;
+}
+
+main .quantitereste {
+  order: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+main .blocquantite {
+  font-family: inter;
+  order: 4;
+  width: 100%;
+  height: 180px;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+main #number {
+  width: 70px;
+  height: 40px;
+  font-size: 24px;
+}
+
+main .button {
+  order: 5;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+}
+
+main .ajouter {
+  font-family: inter;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #1F4F51;
+  color: #FDD365;
+  border-radius: 50px;
+  border:none;
+  text-decoration: none;
+  width: 85%;
+  padding: 20px;
+  margin: 10px 30px 0 30px;
+  text-align: center;
+  align-self: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  cursor: pointer;
+}
+main .ajouter:hover{
+  background-color: #FDD365;
+  color: #1F4F51;
+}
+
+main .artSimil {
+  background-color: white;
+  box-shadow: 4px 4px 10px black;
+  margin: 20px;
+  padding: 0 20px 20px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+main .artSimil > h2 {
+  order: 1;
+  width: 100%;
+  text-align: center;
+}
+
+main .img1 {
+  order: 2;
+  flex-grow: 2;
+  margin-right: 10px;
+  text-align: center;
+}
+
+main .img2 {
+  background-color: white;
+  order: 3;
+  flex-grow: 2;
+  margin: 0 10px 0 10px;
+  text-align: center;
+}
+
+main .img3 {
+  background-color: white;
+  order: 4;
+  flex-grow: 2;
+  margin: 0 10px 0 10px;
+  text-align: center;
+}
+
+main .img4 {
+  background-color: white;
+  order: 5;
+  flex-grow: 2;
+  margin: 0 10px 0 10px;
+  text-align: center;
+}
+
+main .img5 {
+  background-color: white;
+  order: 6;
+  flex-grow: 2;
+  margin-left: 10px;
+  text-align: center;
+}
+
+main .comment {
+  background-color: #E5F1FF;
+  box-shadow: 4px 4px 10px black;
+  margin: 20px;
+}
+
+main .avis1 {
+  background-color: white;
+  padding: 20px;
+}
+
+main .avis1 > h2 {
+  margin: 0;
+}
+
+main #popInsCon {
+  display: block;
+  font-family: inter;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 300px;
+  height: 40px;
+  background-color: #1F4F51;
+  font-size:1.5rem;
+  color: #FFD365;
+  text-align:center;
+  line-height:40px;
+  visibility:hidden;
+  animation-name: tmpAjouter;
+  animation-duration: 4s;
+  box-shadow: 4px 4px 10px black;
+  font-weight: bold;
+  border-radius: 10px 0 0 10px;
+
+}
+main .grand{
+  display: none;
+}
+main .plus{
+  padding:10px;
+  color: grey;
+  cursor: pointer;
+}
+main .plus:hover{
+  color:rgb(70, 70, 70)
+}
+
+main #ancienprix {
+  color: red;
+  text-decoration: line-through red;
+  font-size: 33px;
+}
+
+@keyframes tmpAjouter {
+  from {
+  visibility:visible;
+  background-color: #1F4F51;}
+  to {background-color: white;
+      color: white;
+    visibility:hidden;}
+}
+@media only screen and (max-width: 600px){
+  main .descP{
+    display: none;
+  }
+  main .descPortable{
+    display: block;
+  }
+  main .monarticle{
+    flex-wrap: wrap;
+  }
+  main .prix{
+    max-width: none !important;
+    width: auto !important;
+  }
+  
+  main p{
+    width: 100%;
+    text-align: center;
+  }
+  main .quantitereste{
+    width: 100%;
+  }
+}
+

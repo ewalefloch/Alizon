@@ -1,0 +1,142 @@
+@font-face { font-family: daysone; src: url('../font/DaysOne-Regular.ttf'); }
+@font-face { font-family: inter; src: url('../font/Inter.ttf'); }
+
+body{
+
+    font-size: 15px;
+    font-family: 'inter';
+    background-color: rgb(253, 253, 253);
+}
+
+
+main .detail{
+    width: 70%;
+    background-color: white;
+    border-radius: 1em;
+    text-align:left;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 10px black;
+    
+}
+main .detail span{
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction:row;
+
+}
+
+
+main .info{
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    margin-left: 3%;
+    display: flex;
+    flex-direction:column;
+}
+
+main .info2{
+    color: black;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    margin-left: 3%;
+    display: flex;
+    flex-direction:column;
+}
+body{
+    min-height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    min-height: 65vh;
+}
+main .centre{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: baseline;
+    
+    width: 90%;
+}
+
+main .boutons{
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+main .bouton{
+    font-weight: bold;
+    background-color: #1F4F51;
+    color: #FDD365;
+    padding: 4%;
+    border-radius: 2em;
+    max-width: 250px;
+    min-width: 250px;
+    margin-bottom: 1em;
+    margin-left: 3em;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+main .boutons input{
+    font-size: 103%;
+    min-width: 270px;
+}
+main .bouton:hover{
+    background-color: #FDD365;
+    color: #1F4F51;
+}
+main div a{
+    text-decoration: none;
+    color: #FDD365;
+}
+
+ .tit{
+    text-align: center;
+    justify-content: center;
+}
+
+
+@media only screen and (max-width: 600px){
+    main .centre{
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+    main .detail{
+        min-width: 350px;
+        justify-content: center;
+    }
+
+    main .boutons {
+        align-items: center;
+    }
+    /*main form{
+        max-width: 250px !important;
+        min-width: 250px !important;
+    }*/
+    main .bouton{
+        min-width: 270px !important;
+        max-width: 270px !important;
+        margin-left: 0 !important;
+        padding: 4% 0%;
+    }
+    main .detail span{
+        align-items: center;
+        width: 250px;
+        border-bottom: solid 1px black;
+        margin-left: 50px;
+    }
+}

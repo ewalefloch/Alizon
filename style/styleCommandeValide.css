@@ -1,0 +1,62 @@
+@font-face { font-family: daysone; src: url('font/DaysOne-Regular.ttf'); }
+@font-face { font-family: inter; src: url('font/Inter-Regular.otf'); }
+@font-face { font-family: ubuntuB; src: url('font/Ubuntu-Bold.ttf'); }
+body{
+
+    font-size: 15px;
+    font-family: inter;
+    background-color: rgb(253, 253, 253)    
+}
+
+main p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+main #blocVal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    box-shadow: 4px 4px 10px black;
+    padding-bottom: 30px;
+}
+
+main #commande{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 50px 150px 50px;
+}
+
+main #camion{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+main .valider2{
+    display: flex;
+    font-weight: bold;
+    width: 200px;
+    font-size: 15px;
+    background-color: #1F4F51;
+    padding: 5px 30px 5px 30px;
+    border: none;
+    color: #FDD365;
+    border-radius: 25px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+main .valider2:hover{
+    border: none;
+    background-color: #FFD365;
+    color: #1F4F51;
+}
+main p {
+    text-align: center;
+}

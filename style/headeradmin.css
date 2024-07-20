@@ -1,0 +1,67 @@
+header {
+  display:flex;
+  flex-wrap: wrap;
+  font-family: inter;
+  width: 100%;
+  
+  }
+  
+  header body{
+  font-family: daysone;
+  }
+  
+  header .haut{
+  display: flex;
+  align-items: center;
+  background-color: #1F4F51;
+  width: 100%;
+  flex-wrap: nowrap;
+  height: fit-content;
+  justify-content: center;
+  height: 80px;
+
+  }
+  
+  header .logo{
+  width: 100px;
+  margin-left: 25px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  filter: drop-shadow(0 5px 0.5rem black);
+  }
+  
+  header .logo:hover{
+  animation: logoanim 0.8s ease-in-out infinite;
+  }
+  
+  @keyframes logoanim {
+  100%{
+  transform: rotate(-360deg);
+  }
+  }
+  
+  header h1{
+  font-family: daysone;
+  text-decoration: none;
+  left: 0;
+  }
+  
+  header a{
+  text-decoration: none;
+  color:#FFD365;
+  left: 0;
+  }
+  header h1 span 
+  {
+    color:white; 
+    font-size:80%; 
+    margin:0;
+    margin-top:0.5%;
+  }
+  header .invisible{
+    height: 100px;
+  }
+  
+  
+  

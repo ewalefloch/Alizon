@@ -1,0 +1,101 @@
+@font-face { font-family: daysone; src: url('font/DaysOne-Regular.ttf'); }
+@font-face { font-family: inter; src: url('font/Inter-Regular.otf'); }
+@font-face { font-family: ubuntuB; src: url('font/Ubuntu-Bold.ttf'); }
+
+body{
+
+    font-size: 15px;
+    font-family: inter;
+    background-color: #FFFF;
+}
+main .formulaire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+main > form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    background-color: #FFFF;
+    align-items: center;
+    width: 400px;
+    margin: 50px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+}
+
+main h1{
+    font-size: 40px;
+    font-family: daysone;
+    color: #FDD365;
+    text-align: center;
+}
+main a{
+    text-decoration: none;
+}
+
+main h2{
+    font-size: 25px;
+    font-family: ubuntuB;
+}
+main .envoyer {
+    font-family: inter;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #1F4F51;
+    color: #FDD365;
+    border-radius: 50px;
+    border:none;
+    text-decoration: none;
+    width: 85%;
+    padding: 20px;
+    margin: 10px 30px 0 30px;
+    text-align: center;
+    align-self: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+  }
+  main .envoyer:hover {
+    background-color: #1c3f40;
+
+  }
+
+main div{
+    font-size: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+    padding: 10%;
+    margin: 10px;
+}
+main div form > .ajouter {
+    border: none;
+    font-family: inter;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #1F4F51;
+    color: #FDD365;
+    border-radius: 50px;
+    text-decoration: none;
+    width: 70%;
+    padding: 20px;
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+    margin: 20px;
+  }
+  main .ajouter:hover {
+    background-color: #1c3f40;
+
+  }
+  main p{
+    font-family:daysone ;
+    color: #FDD365;
+  }
